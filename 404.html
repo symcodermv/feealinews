@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+// GitHub Pages 404 trick — redirect article URLs to index.html
+var path = window.location.pathname;
+var search = window.location.search;
+// Store the path so index.html can pick it up
+sessionStorage.setItem('redirect', path + search);
+window.location.replace('/');
+</script>
+</head>
+<body></body>
+</html>
